@@ -1,0 +1,375 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.128.0.146:5050
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+127.0.0.1 - - [26/Apr/2024 04:29:43] "GET /live HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mtech1/flask_flutter_server/app.py", line 31, in live
+    return render_template('index.html')
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/mtech1/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/mtech1/flask_flutter_server/templates/index.html", line 8, in top-level template code
+    <img src="{{ url_for('video_feed') }}">
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/mtech1/.local/lib/python3.8/site-packages/flask/app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/mtech1/.local/lib/python3.8/site-packages/werkzeug/routing/map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'video_feed'. Did you mean 'get_media' instead?
+127.0.0.1 - - [26/Apr/2024 04:29:45] "GET /live?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Apr/2024 04:29:45] "GET /live?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Apr/2024 04:29:45] "GET /live?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+127.0.0.1 - - [26/Apr/2024 04:29:46] "GET /live?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+127.0.0.1 - - [26/Apr/2024 04:30:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:30:59] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:31:01] "GET /get-media/20240426043056_1000446623.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:31:21] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:31:22] "GET /get-media/20240426043117_1000446624.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:32:01] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 04:32:03] "GET /get-media/20240426043158_1000446623.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+YOLOv5 Output: 
+YOLOv5 Output: 
+YOLOv5 Output: 
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+127.0.0.1 - - [26/Apr/2024 14:39:31] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 14:39:34] "GET /get-media/20240426143844_1000446624.jpg HTTP/1.1" 200 -
+YOLOv5 Output: 
+YOLOv5 Output: Class counts: {}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Class counts: {'Orange': 2, 'apple': 3, 'banana': 3}
+Counts saved to detections/output/exp/20240426144009_1000446336_counts.txt
+Results saved to /home/mtech1/flask_flutter_server/./detections/output/exp
+127.0.0.1 - - [26/Apr/2024 14:40:48] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 14:40:52] "GET /get-media/20240426144009_1000446336.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Apr/2024 14:40:54] "GET /get-media/20240426144009_1000446336.mp4 HTTP/1.1" 206 -
+127.0.0.1 - - [26/Apr/2024 14:40:56] "GET /get-media/20240426144009_1000446336.mp4 HTTP/1.1" 206 -
+127.0.0.1 - - [26/Apr/2024 14:41:05] "GET /get-media/20240426144009_1000446336.mp4 HTTP/1.1" 206 -
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
+ * Detected change in '/home/mtech1/flask_flutter_server/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 136-247-557
