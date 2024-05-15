@@ -1,0 +1,15 @@
+YOLOv5 🚀 v7.0-287-g574331f9 Python-3.8.10 torch-1.11.0+cu102 CUDA:0 (NVIDIA GeForce RTX 2080, 7974MiB)
+
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7018216 parameters, 0 gradients, 15.8 GFLOPs
+Adding AutoShape... 
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7018216 parameters, 0 gradients, 15.8 GFLOPs
+ * Serving Flask app 'app.py'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5090
+Press CTRL+C to quit
+Saved 1 image to [1mdetections/output/exp[0m
+127.0.0.1 - - [27/Apr/2024 20:10:04] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [27/Apr/2024 20:10:04] "GET /get-media/20240427201004_1000446624.jpg HTTP/1.1" 200 -

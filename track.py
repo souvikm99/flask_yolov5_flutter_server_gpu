@@ -150,55 +150,7 @@ def detect(opt):
 
                 # pass detections to deepsort
                 outputs = deepsort.update(xywhs.cpu(), confs.cpu(), clss.cpu(), im0)
-
-                # draw boxes for visualization
-                # if len(outputs) > 0:
-                #     for j, (output, conf) in enumerate(zip(outputs, confs)):
-                #
-                #         bboxes = output[0:4]
-                #         id = output[4]
-                #         cls = output[5]
-                #
-                #         c = int(cls)  # integer class
-                #         label = f'{id} {names[c]} {conf:.2f}'
-                #         annotator.box_label(bboxes, label, color=colors(c, True))
-                #
-                #         if save_txt:
-                #             # to MOT format
-                #             bbox_left = output[0]
-                #             bbox_top = output[1]
-                #             bbox_w = output[2] - output[0]
-                #             bbox_h = output[3] - output[1]
-                #             # Write MOT compliant results to file
-                #             with open(txt_path, 'a') as f:
-                #                f.write(('%g ' * 10 + '\n') % (frame_idx + 1, id, bbox_left,
-                #                                            bbox_top, bbox_w, bbox_h, -1, -1, -1, -1))  # label format
-
-                # draw boxes for visualization
-                # if len(outputs) > 0:
-                #     for j, (output, conf) in enumerate(zip(outputs, confs)):
-
-                #         bboxes = output[0:4]
-                #         id = output[4]
-                #         cls = output[5]
-
-                #         c = int(cls)  # integer class
-                #         label = f'{id} {names[c]} {conf:.2f}'
-                #         annotator.box_label(bboxes, label, color=colors(c, True))
-
-                #         if save_txt and names[c] == 'person':  # 只有当检测到的类别是行人时，才将其写入txt文件
-                #             # to MOT format
-                #             bbox_left = output[0]
-                #             bbox_top = output[1]
-                #             bbox_w = output[2] - output[0]
-                #             bbox_h = output[3] - output[1]
-                #             # Write MOT compliant results to file
-                #             with open(txt_path, 'a') as f:
-                #                 f.write(('%g ' * 10 + '\n') % (frame_idx + 1, id, bbox_left,
-                #                                                bbox_top, bbox_w, bbox_h, -1, -1, -1,
-                #                                                -1))  # label format
-
-                
+               
                 if len(outputs) > 0:
                     for j, (output, conf) in enumerate(zip(outputs, confs)):
                         bboxes = output[0:4]
@@ -225,19 +177,6 @@ def detect(opt):
                             output_line = f"{frame_idx + 1} {id} {bbox_left} {bbox_top} {bbox_w} {bbox_h} -1 -1 -1 -1 {label2}\n"
                             with open(txt_path, 'a') as f:
                                 f.write(output_line)
-                        
-                
-                # save_path = str(Path(out))
-                # # 从 source 中提取文件名
-                # txt_file_name = os.path.basename(source).split('.')[0]
-                # # 使用 os.path.join 构造文件路径
-                # txt_path = os.path.join(str(Path(out)), txt_file_name + '.txt')        
-                # After processing all outputs, convert the sets of IDs to counts
-
-
-
-
-
             else:
                 deepsort.increment_ages()
             

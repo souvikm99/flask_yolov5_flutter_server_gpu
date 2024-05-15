@@ -1,0 +1,1 @@
+Flag --region has been deprecated, ngrok automatically chooses the region with lowest latency
